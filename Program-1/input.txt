@@ -1,0 +1,18 @@
+This is the demo file for the input of program 1
+
+server running command
+gcc server.c -o server
+
+after compiled
+./server
+
+client running command
+gcc client.c -o client
+
+after compiled
+./client 127.0.0.1
+
+and after that it prompts for
+Enter the file name:
+
+type the file name which have some contents in it...
