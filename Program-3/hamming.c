@@ -15,10 +15,10 @@ int main(){
 
         printf("The data encoded is : \n");
         for(i=1; i<8; i++){
-                printf("%d\n",data[i]);
+                printf("%d\t",data[i]);
         }
 
-        printf("Enter the data received\n");
+        printf("\nEnter the data received\n");
         for(i=1; i<8; i++){
                 scanf("%d",&recv[i]);
         }
@@ -26,9 +26,7 @@ int main(){
         c0 = (recv[1]+recv[3]+recv[5]+recv[7])%2;
         c1 = (recv[2]+recv[3]+recv[6]+recv[7])%2;
         c2 = (recv[4]+recv[5]+recv[6]+recv[7])%2;
-  
-        c = c2*4 + c1*2 + c0*1; //This is the syndrome
-  
+        c = c2*4 + c1*2 + c0*1;
         printf("The error is at position: %d\n",c);
 
         if(recv[c] == 0)
@@ -36,9 +34,12 @@ int main(){
         else
                 recv[c]=0;
 
-        printf("The corrected code is: \n");
+        printf("The corrected code is: \t");
         for(i=1;i<8;i++)
                 printf("%d",recv[i]);
+        printf("\n");
+
+        printf("The syndrome bits are: %d%d%d\n",c2,c1,c0);
 
         return 0;
 }
