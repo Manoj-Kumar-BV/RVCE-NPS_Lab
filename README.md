@@ -22,7 +22,7 @@ Write a program to implement concurrent chat server that allows current logged-i
 ## Program-6  
 **Implementation of concurrent and iterative echo servers using both connection and connectionless socket system calls**
 
-- **[a) Concurrent Echo Server (Connection-Oriented Socket)](https://github.com/Manoj-Kumar-BV/RVCE-NPS_Lab/tree/main/Program-6/C)**  
+- **[a) Concurrent Echo Server (Connection-Oriented Socket)](https://github.com/Manoj-Kumar-BV/RVCE-NPS_Lab/tree/main/Program-6/A)**  
   Implementation of concurrent echo server using connection-oriented socket system call.
 
 - **[b) Iterative Echo Server (Connection-Oriented Socket)](https://github.com/Manoj-Kumar-BV/RVCE-NPS_Lab/tree/main/Program-6/B)**  
